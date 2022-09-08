@@ -1,46 +1,142 @@
-# Getting Started with Create React App and Redux
+# Reto de Solera
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![Project Image](./frontend/src/assets/screenshot1.png)
 
-## Available Scripts
+> Screenshot - Página principal o Home
 
-In the project directory, you can run:
+![Project Image](./frontend/src/assets/screenshot2.png)
 
-### `npm start`
+> Screenshot - Página de formulario para editar servicios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tabla de contenidos
 
-### `npm test`
+- [Descripción](#descripcion)
+- [¿Cómo usar esta aplicación?](#como-usar-esta-aplicacion)
+- [Referencias](#referencias)
+- [Licencia](#licencia)
+- [Autor](#autor)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Descripción
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Single Page Application que nos permite crear, editar, eliminar y filtrar tarjetas con distintos servicios ofrecidos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tecnologías
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- HTML
+- CSS
+- JavaScript
+- ReactJS
+- Styled components
+- Redux
+- React router
 
-### `npm run eject`
+[Go up](#reto-de-solera)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ¿Cómo usar esta aplicación?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Primero, clona el repositorio usando tu llave pública ssh en la carpeta local de tu preferencia, usando el siguiente comando:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```html
+$ git clone
+git@github.com:heraldofortuna/servicios-prueba-frontend.git
+```
 
-## Learn More
+Ahora, ingresa al directorio de la aplicación:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```html
+$ cd servicios-prueba-frontend
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Luego, instala las dependencias de la aplicación corriendo el siguiente comando npm:
+
+```html
+npm install
+```
+
+Una vez cargado todo, ya estamos listos para arrancar la aplicación ingresando lo siguiente:
+
+```html
+npm start
+```
+
+Finalmente, abrimos el link de nuestro localhost [http://localhost:3000](http://localhost:3000) para ver nuestro desarrollo en un ambiente seguro.
+
+- Ojo: La aplicación ya se encuentra deployada en la web en el siguiente enlace gh:
+
+```html
+https://heraldofortuna.github.io/servicios-prueba-frontend/
+```
+
+---
+
+## Referencias
+
+Documentación oficial de ReactJS:
+
+```html
+https://reactjs.org/docs/getting-started.html
+```
+
+Documentación oficial de Redux:
+
+```html
+https://react-redux.js.org/tutorials/quick-start
+```
+
+[Go up](#reto-de-solera)
+
+---
+
+## Comments
+
+- Puedes filtrar por categorías de servicios en el navegador superior.
+
+- En el formulario de la derecha del home, podemos crear un nuevo servicio, además de cancelar lo ingresado en caso cambiemos de opinión pero ojo: Solo está permitido un ingreso máximo de 25 caracteres para el título y 75 para la descripción del mismo.
+
+- La aplicación es responsiva al 100% (usé medias queries para esto).
+
+[Go up](#reto-de-solera)
+
+---
+
+## Licencia
+
+MIT License
+
+Copyright (c) [2021] [Heraldo Fortuna]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+[Go up](#reto-de-solera)
+
+---
+
+## Autor
+
+- Twitter - [@heraldofortuna](https://twitter.com/heraldofortuna)
+- GitHub - [heraldofortuna](https://github.com/heraldofortuna)
+- Linkedin - [heraldofortuna](https://www.linkedin.com/in/heraldo-fortuna/)
+
+[Go up](#reto-de-solera)
