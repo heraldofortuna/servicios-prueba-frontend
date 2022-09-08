@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { addService } from "../features/services/serviceSlice";
+import initialServiceState from "../constants/initialServiceState";
 import Button from "../components/Button";
 
 const ServiceForm = () => {
   const dispatch = useDispatch();
   const services = useSelector((state) => state.services);
-
-  const [service, setService] = useState({
-    title: "",
-    description: "",
-    type: "home",
-  });
+  const [service, setService] = useState(initialServiceState);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -30,11 +26,7 @@ const ServiceForm = () => {
   };
 
   const handleClickCancel = () => {
-    setService({
-      title: "",
-      description: "",
-      type: "home",
-    });
+    setService(initialServiceState);
   };
 
   return (
