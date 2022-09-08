@@ -1,27 +1,12 @@
 import React from "react";
 
-import Button from "../components/Button";
+import Nav from "../components/Nav";
 
 const Header = () => {
   return (
     <header>
       <h1>Servicios</h1>
-      <nav>
-        <ul>
-          <li>
-            <Button text="Todos" />
-          </li>
-          <li>
-            <Button text="Autos" />
-          </li>
-          <li>
-            <Button text="Salud" />
-          </li>
-          <li>
-            <Button text="Hogar" />
-          </li>
-        </ul>
-      </nav>
+      <Nav />
     </header>
   );
 };
