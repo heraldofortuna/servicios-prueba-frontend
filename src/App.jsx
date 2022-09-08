@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import GlobalStyle from "./styles/globalStyles";
 import Home from "./pages/home/Home";
@@ -10,7 +10,7 @@ const App = () => {
     <div className="app">
       <div className="wrapper">
         <GlobalStyle />
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route
@@ -18,7 +18,7 @@ const App = () => {
               element={<EditForm />}
             ></Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </div>
   );
