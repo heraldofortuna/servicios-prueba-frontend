@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
-const StyledMain = styled.main`
+const StyledContainer = styled.main`
   background-color: white;
   padding: 0 12px;
-`;
-
-const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,4 +12,4 @@ const StyledContainer = styled.div`
   }
 `;
 
-export { StyledMain, StyledContainer };
+export { StyledContainer };

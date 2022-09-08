@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 import {
   StyledCard,
@@ -23,7 +24,9 @@ const Card = ({ data }) => {
         <p>{data.description}</p>
       </StyledContainer>
       <StyledButtons>
-        <StyledButton>Editar</StyledButton>
+        <Link to={`/edit-service/${data.id}`}>
+          <StyledButton>Editar</StyledButton>
+        </Link>
         <StyledButton onClick={() => handleDelete(data.id)}>
           Eliminar
         </StyledButton>

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 
 import {
   StyledWrapper,
@@ -7,36 +8,58 @@ import {
   StyledContainer,
   StyledButtons,
 } from "./formStyle";
-import { addService } from "../../features/services/serviceSlice";
+import {
+  addService,
+  editService,
+} from "../../features/services/serviceSlice";
 import initialServiceState from "../../constants/initialServiceState";
 import Input from "../input/Input";
 import Button from "../button/Button";
 import Select from "../select/Select";
 import TextArea from "../textarea/TextArea";
 
-const ServiceForm = () => {
+const Form = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const params = useParams();
   const services = useSelector((state) => state.services);
   const [service, setService] = useState(initialServiceState);
+  const editMode = params.id;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
 
     setService({
       ...service,
-      id: services.length + 1,
       [name]: value,
     });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(addService(service));
+
+    if (editMode) {
+      dispatch(editService({ ...service, id: params.id }));
+    } else {
+      dispatch(addService({ ...service, id: services.length + 1 }));
+    }
+
+    navigate("/");
   };
 
   const handleClickCancel = () => {
     setService(initialServiceState);
   };
+
+  useEffect(() => {
+    if (editMode) {
+      const currentService = services.find(
+        (service) => service.id === Number(params.id)
+      );
+
+      setService(currentService);
+    }
+  }, [editMode, params, services]);
 
   return (
     <StyledWrapper>
@@ -46,7 +69,7 @@ const ServiceForm = () => {
           <Input
             label="Nombre"
             name="title"
-            value={service.title}
+            value={service?.title}
             type="text"
             onChange={handleChange}
             required={true}
@@ -54,14 +77,14 @@ const ServiceForm = () => {
           <TextArea
             label="Descripción"
             name="description"
-            value={service.description}
+            value={service?.description}
             onChange={handleChange}
             required={true}
           />
           <Select
             label="Tipo"
             name="type"
-            value={service.type}
+            value={service?.type}
             onChange={handleChange}
           />
         </StyledContainer>
@@ -73,14 +96,16 @@ const ServiceForm = () => {
           text={"Grabar"}
           color="forestgreen"
         />
-        <Button
-          onClick={handleClickCancel}
-          text={"Cancelar"}
-          color="crimson"
-        />
+        {!editMode && (
+          <Button
+            onClick={handleClickCancel}
+            text={"Cancelar"}
+            color="crimson"
+          />
+        )}
       </StyledButtons>
     </StyledWrapper>
   );
 };
 
-export default ServiceForm;
+export default Form;

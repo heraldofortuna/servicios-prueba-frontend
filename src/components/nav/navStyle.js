@@ -15,6 +15,7 @@ const StyledList = styled.ul`
 `;
 
 const StyledItem = styled.li`
+  opacity: ${(props) => (props.selected ? 1 : 0.5)};
   cursor: pointer;
   transition: 0.25s all;
   &: hover {

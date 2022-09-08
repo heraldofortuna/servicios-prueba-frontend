@@ -1,23 +1,24 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GlobalStyle from "./styles/globalStyles";
-import Header from "./layouts/header/Header";
-import Main from "./layouts/main/Main";
-import Footer from "./layouts/footer/Footer";
-import ServiceForm from "./components/form/Form";
-import ServicesList from "./components/cardList/CardList";
+import Home from "./pages/home/Home";
+import EditForm from "./pages/editForm/EditForm";
 
 const App = () => {
   return (
     <div className="app">
       <div className="wrapper">
         <GlobalStyle />
-        <Header />
-        <Main>
-          <ServiceForm />
-          <ServicesList />
-        </Main>
-        <Footer />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route
+              path="/edit-service/:id"
+              element={<EditForm />}
+            ></Route>
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );

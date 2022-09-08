@@ -7,12 +7,14 @@ import {
 } from "./headerStyle";
 import Nav from "../../components/nav/Nav";
 
-const Header = () => {
+const Header = ({ editMode = false }) => {
+  const title = editMode ? "Editar servicio" : "Servicios";
+
   return (
     <StyledHeader>
       <StyledContainer>
-        <StyledTitle>Servicios</StyledTitle>
-        <Nav />
+        <StyledTitle>{title}</StyledTitle>
+        <Nav editMode={editMode} />
       </StyledContainer>
     </StyledHeader>
   );

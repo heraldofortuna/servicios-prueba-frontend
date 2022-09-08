@@ -9,6 +9,19 @@ export const serviceSlice = createSlice({
     addService: (state, action) => {
       state.push(action.payload);
     },
+    editService: (state, action) => {
+      const { id, title, description, type } = action.payload;
+
+      const foundService = state.find(
+        (service) => service.id === Number(id)
+      );
+
+      if (foundService) {
+        foundService.title = title;
+        foundService.description = description;
+        foundService.type = type;
+      }
+    },
     deleteService: (state, action) => {
       const serviceFound = state.find(
         (service) => service.id === action.payload
@@ -21,6 +34,7 @@ export const serviceSlice = createSlice({
   },
 });
 
-export const { addService, deleteService } = serviceSlice.actions;
+export const { addService, editService, deleteService } =
+  serviceSlice.actions;
 
 export default serviceSlice.reducer;
