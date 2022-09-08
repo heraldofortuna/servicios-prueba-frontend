@@ -1,9 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import ServiceItem from "../components/ServiceItem";
+import { StyledCardList } from "./cardListStyle";
+import ServiceItem from "../card/Card";
 
-const ServicesList = () => {
+const CardList = () => {
   const allServices = useSelector((state) => state.services);
   const serviceType = useSelector((state) => state.serviceType);
 
@@ -13,7 +14,7 @@ const ServicesList = () => {
       : allServices.filter((service) => service.type === serviceType);
 
   return (
-    <ul>
+    <StyledCardList>
       {services.map((service) => {
         return (
           <li key={service.id}>
@@ -21,8 +22,8 @@ const ServicesList = () => {
           </li>
         );
       })}
-    </ul>
+    </StyledCardList>
   );
 };
 
-export default ServicesList;
+export default CardList;

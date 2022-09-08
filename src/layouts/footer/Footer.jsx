@@ -1,13 +1,15 @@
 import React from "react";
 
+import { StyledFooter, StyledContainer } from "./footerStyle";
+
 const Footer = () => {
   return (
-    <footer>
-      <div>
+    <StyledFooter>
+      <StyledContainer>
         <p>- Desarrollado por Heraldo Fortuna -</p>
         <span>2022 - Prueba frontend Solera</span>
-      </div>
-    </footer>
+      </StyledContainer>
+    </StyledFooter>
   );
 };
 
