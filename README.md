@@ -1,6 +1,6 @@
 # Reto de Solera
 
-![Project Image](./frontend/src/assets/screenshot1.png)
+![Project Image](./src/assets/screenshot1.png)
 
 > Screenshot - Página principal o Home
 
@@ -13,7 +13,7 @@
 ## Tabla de contenidos
 
 - [Descripción](#descripción)
-- [¿Cómo usar esta aplicación?](#como-usar-esta-aplicacion)
+- [¿Cómo usar esta aplicación?](#cómo-usar-esta-aplicación)
 - [Referencias](#referencias)
 - [Licencia](#licencia)
 - [Autor](#autor)
