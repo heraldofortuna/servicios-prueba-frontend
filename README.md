@@ -4,7 +4,7 @@
 
 > Screenshot - Página principal o Home
 
-![Project Image](./frontend/src/assets/screenshot2.png)
+![Project Image](./src/assets/screenshot2.png)
 
 > Screenshot - Página de formulario para editar servicios
 
