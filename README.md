@@ -12,7 +12,7 @@
 
 ## Tabla de contenidos
 
-- [Descripción](#descripcion)
+- [Descripción](#descripción)
 - [¿Cómo usar esta aplicación?](#como-usar-esta-aplicacion)
 - [Referencias](#referencias)
 - [Licencia](#licencia)
@@ -34,7 +34,7 @@ Single Page Application que nos permite crear, editar, eliminar y filtrar tarjet
 - Redux
 - React router
 
-[Go up](#reto-de-solera)
+[Ir al inicio](#reto-de-solera)
 
 ---
 
@@ -89,11 +89,11 @@ Documentación oficial de Redux:
 https://react-redux.js.org/tutorials/quick-start
 ```
 
-[Go up](#reto-de-solera)
+[Ir al inicio](#reto-de-solera)
 
 ---
 
-## Comments
+## Comentarios
 
 - Puedes filtrar por categorías de servicios en el navegador superior.
 
@@ -101,7 +101,7 @@ https://react-redux.js.org/tutorials/quick-start
 
 - La aplicación es responsiva al 100% (usé medias queries para esto).
 
-[Go up](#reto-de-solera)
+[Ir al inicio](#reto-de-solera)
 
 ---
 
@@ -129,7 +129,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Go up](#reto-de-solera)
+[Ir al inicio](#reto-de-solera)
 
 ---
 
@@ -139,4 +139,4 @@ SOFTWARE.
 - GitHub - [heraldofortuna](https://github.com/heraldofortuna)
 - Linkedin - [heraldofortuna](https://www.linkedin.com/in/heraldo-fortuna/)
 
-[Go up](#reto-de-solera)
+[Ir al inicio](#reto-de-solera)
