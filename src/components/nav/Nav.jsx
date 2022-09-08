@@ -18,7 +18,9 @@ const Nav = ({ editMode }) => {
     <StyledNav>
       <StyledList>
         {editMode ? (
-          <Link to="/">Atrás</Link>
+          <Link to="/">
+            <StyledItem selected={true}>Atrás</StyledItem>
+          </Link>
         ) : (
           serviceTypes.map((serviceType) => {
             return (
