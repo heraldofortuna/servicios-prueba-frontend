@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/servicios-prueba-frontend/static/js/main.70b3a28c.js",
+    "main.js": "/servicios-prueba-frontend/static/js/main.6999c4b6.js",
     "index.html": "/servicios-prueba-frontend/index.html",
-    "main.70b3a28c.js.map": "/servicios-prueba-frontend/static/js/main.70b3a28c.js.map"
+    "main.6999c4b6.js.map": "/servicios-prueba-frontend/static/js/main.6999c4b6.js.map"
   },
   "entrypoints": [
-    "static/js/main.70b3a28c.js"
+    "static/js/main.6999c4b6.js"
   ]
 }
