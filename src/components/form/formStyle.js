@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
-  min-width: 400px;
   border: 1px solid gray;
   border-radius: 4px;
+  @media (min-width: 768px) {
+    min-width: 400px;
+  }
 `;
 
 const StyledForm = styled.form`
