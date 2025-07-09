@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledWrapper, StyledTextArea } from "./textAreaStyle";
 
 const TextArea = ({ label, name, value, onChange, required }) => {

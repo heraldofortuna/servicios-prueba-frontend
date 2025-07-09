@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -93,13 +93,13 @@ const Form = () => {
         <Button
           form="service-form"
           type="submit"
-          text={"Grabar"}
+          text={"Guardar"}
           color="forestgreen"
         />
         {!editMode && (
           <Button
             onClick={handleClickCancel}
-            text={"Cancelar"}
+            text={"Limpiar"}
             color="crimson"
           />
         )}

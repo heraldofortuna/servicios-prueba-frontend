@@ -6,12 +6,13 @@ const StyledNav = styled.nav`
 `;
 
 const StyledList = styled.ul`
-  width: fit-content;
+  width: 90%;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 16px;
+  padding: 16px 0;
+  margin: 0 auto;
 `;
 
 const StyledItem = styled.li`

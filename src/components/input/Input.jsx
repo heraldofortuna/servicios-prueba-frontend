@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledWrapper, StyledInput } from "./inputStyle";
 
 const Input = ({ label, name, value, type, onChange, required }) => {

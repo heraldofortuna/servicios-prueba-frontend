@@ -14,8 +14,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     font-weight: 400;
   }
-
+    
   .wrapper {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 32px;

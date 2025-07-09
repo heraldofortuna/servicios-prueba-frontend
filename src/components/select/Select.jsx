@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledWrapper, StyledSelect } from "./selectStyle";
 import serviceTypes from "../../constants/serviceTypes";
 

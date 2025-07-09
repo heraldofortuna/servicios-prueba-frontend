@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledButton } from "./buttonStyle";
 
 const Button = ({ form, type, text, onClick, color }) => {

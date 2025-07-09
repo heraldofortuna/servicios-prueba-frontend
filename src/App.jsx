@@ -1,6 +1,4 @@
-import React from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
-
 import GlobalStyle from "./styles/globalStyles";
 import Home from "./pages/home/Home";
 import EditForm from "./pages/editForm/EditForm";

@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
+  max-width: 400px;
+  width: 100%;
   border: 1px solid gray;
   border-radius: 4px;
+  margin: 0 auto;
   @media (min-width: 768px) {
     min-width: 400px;
   }
@@ -25,6 +28,7 @@ const StyledButtons = styled.div`
   background-color: whitesmoke;
   display: flex;
   align-items: center;
+  gap: 8px;
   padding: 12px 16px;
 `;
 

@@ -5,9 +5,11 @@ const StyledHeader = styled.header`
 `;
 
 const StyledContainer = styled.div`
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 `;
 
 const StyledTitle = styled.h1`

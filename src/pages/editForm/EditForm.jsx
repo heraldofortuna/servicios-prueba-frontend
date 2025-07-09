@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledContainer } from "./editFormStyle";
 import Header from "../../layouts/header/Header";
 import Footer from "../../layouts/footer/Footer";

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   background-color: black;
+  margin-top: auto;
 `;
 
 const StyledContainer = styled.div`

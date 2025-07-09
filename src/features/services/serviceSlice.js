@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 import initialData from "../../constants/initialData";
 
 export const serviceSlice = createSlice({
